@@ -1,6 +1,6 @@
 # QLImageset
 
-QLImageset is a quicklook plugin that lets you preview package or directory with extension likes **`imageset`**, **`appiconset`** and **`launchimage`**. It also displays **the dimensions of the image in the title bar**.
+QLImageset is a quicklook plugin that lets you preview package or directory with extension likes **`imageset`**, **`appiconset`** and **`launchimage`**. It also displays **the dimensions using point coordinates of the image in the title bar**.
 
 ## Usage
 
@@ -10,7 +10,7 @@ QLImageset is a quicklook plugin that lets you preview package or directory with
 
 ## Installation
 
-1. Download this package [QLImageset.qlgenerator.zip](https://github.com/qfish/QLImageset/releases/download/v1.0/QLImageset.qlgenerator.zip)
+1. Download this package [QLImageset.qlgenerator.zip](http://const.qiniudn.com/repo/qlimageset/QLImageset.qlgenerator.zip)
 
 2. Unpack it, copy or move the `QLImageset.qlgenerator` to the following path:
 
