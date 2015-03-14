@@ -23,7 +23,7 @@ It also displays **the dimensions** using point coordinates of the image in the 
 ![preview](https://cloud.githubusercontent.com/assets/679824/6651483/1e41b0d8-ca7f-11e4-9d95-6dbc5ed2ca40.gif)
 
 ## TODO 
-[x] Support generate thumbnails.
+[x] Support generating thumbnails.
 
 ## Uninstallation
 
