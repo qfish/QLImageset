@@ -14,7 +14,7 @@ It also displays **the dimensions** using point coordinates of the image in the 
     /Library/QuickLook
     ```
 
-    Tips: To quickly go to Finder type `Shift + Cmd + G`. 
+    Tips: To quickly go to Finder, type `Shift + Cmd + G`. 
 
 ## Usage
 
@@ -44,8 +44,8 @@ Find and delete the following path:
 
 ## Trouble-Shooting
   
- * Run qlmanage -r in the Terminal. (This will restart QuickLook, which reloads all plugins.)
- * `Alt+Cmd+Esc`, relaunch the Finder. (This will restart Finder.)
+ * Run `qlmanage -r` in the Terminal. (This will restart QuickLook, which reloads all plugins.)
+ * Type `Alt + Cmd + Esc`, relaunch the Finder. (This will restart Finder.)
    
 ## Special thanks to
 
