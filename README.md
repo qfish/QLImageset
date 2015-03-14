@@ -1,10 +1,10 @@
 # QLImageset
 
-QLImageset is a quicklook plugin that lets you preview imageset with image size in the title. 
+QLImageset is a quicklook plugin that lets you preview package or directory with extension likes imageset, appiconset and launchimage with image size in the title. 
 
 ## Usage
 
-**Selecte the package and press the `SPACE` key.**
+**Selecte** the package or directory, then **press** the **`SPACE`** key which activates the QuickLook.
 
 ![preview](https://cloud.githubusercontent.com/assets/679824/6651483/1e41b0d8-ca7f-11e4-9d95-6dbc5ed2ca40.gif)
 
