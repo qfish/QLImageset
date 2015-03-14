@@ -10,7 +10,7 @@ QLImageset is a quicklook plugin that lets you preview package or directory with
 
 ## Installation
 
-1. Download this package [QLImageset.zip](http://qfi.sh/qlimageset/build/QLImageset.tar.gz)
+1. Download this package [QLImageset.qlgenerator.zip](https://github.com/qfish/QLImageset/releases/download/v1.0/QLImageset.qlgenerator.zip)
 
 2. Unpack it, copy or move the `QLImageset.qlgenerator` to the following path:
 
