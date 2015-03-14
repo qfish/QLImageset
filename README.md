@@ -2,7 +2,7 @@
 
 QLImageset is a quicklook plugin that lets you preview package or directory with extension likes **`imageset`**, **`appiconset`** and **`launchimage`**. 
 
-It also displays **the dimensions** using point coordinates of the image in the quciklook title bar.
+It also displays **the dimensions** using point coordinates of the image in the quicklook title bar.
 
 ## Installation
 
