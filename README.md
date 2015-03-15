@@ -6,7 +6,7 @@ It also displays **the dimensions** using point coordinates of the image in the 
 
 ## Installation
 
-1. Download this package [QLImageset.qlgenerator.zip](https://github.com/qfish/QLImageset/releases/download/v1.0/QLImageset.qlgenerator.zip)
+1. Download this package [QLImageset.qlgenerator.zip](http://const.qiniudn.com/repo/qlimageset/QLImageset.qlgenerator.zip)
 
 2. Unpack it, copy or move the `QLImageset.qlgenerator` to the following path:
 
@@ -20,10 +20,10 @@ It also displays **the dimensions** using point coordinates of the image in the 
 
 **Selecte** the package or directory, then **Press** the **`SPACE`** key.
 
-![preview](https://cloud.githubusercontent.com/assets/679824/6651483/1e41b0d8-ca7f-11e4-9d95-6dbc5ed2ca40.gif)
+![preview](http://const.qiniudn.com/repo/qlimageset/preview.gif)
 
 ## TODO 
-[x] Support generating thumbnails.
+- [x] Support generating thumbnails.
 
 ## Uninstallation
 
