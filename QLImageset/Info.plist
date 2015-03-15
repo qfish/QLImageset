@@ -11,14 +11,14 @@
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>cn.arceus.imageset</string>
+				<string>qfi.sh.imageset</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>cn.arceus.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>qfi.sh.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -68,13 +68,11 @@
 				<string>public.package</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Markdown document</string>
+			<string>Imageset Package</string>
 			<key>UTTypeIconFile</key>
 			<string>public.image</string>
 			<key>UTTypeIdentifier</key>
-			<string>cn.arceus.imageset</string>
-			<key>UTTypeReferenceURL</key>
-			<string>http://daringfireball.net/projects/markdown/</string>
+			<string>qfi.sh.imageset</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>

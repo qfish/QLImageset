@@ -47,7 +47,7 @@ NSString * QLImagesetGetFileForPath(NSString * path)
     static NSArray * filters = nil;
     
     if ( !filters ) {
-        filters = @[@"png", @"@2x.png", @"@3x.png"];
+        filters = @[@"png", @"@2x.png", @"@3x.png", @"jpg"];
     }
     
     NSString * content = nil;
@@ -65,3 +65,21 @@ NSString * QLImagesetGetFileForPath(NSString * path)
     return nil;
 
 }
+
+#if !QLIMAGESET_USE_DEFAULT
+
+void QLImagesetDrawImageInContentWithURL(CGContextRef context, CFURLRef url, CGSize canvasSize)
+{
+    CGImageSourceRef source = CGImageSourceCreateWithURL(url, NULL);
+    CGImageRef image = CGImageSourceCreateImageAtIndex(source, 0, NULL);
+    CFRelease(source);
+    
+    CGFloat width = CGImageGetWidth(image);
+    CGFloat height = CGImageGetWidth(image);
+    QLImagesetLog(@"%f %f, %f %f", canvasSize.width, canvasSize.height, width, height);
+    CGContextDrawImage(context, CGRectMake(0, 0, width, height), image);
+    CGContextFlush(context);
+    CGImageRelease(image);
+}
+
+#endif // #if QLIMAGESET_USE_DEFAULT

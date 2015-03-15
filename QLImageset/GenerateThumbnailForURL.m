@@ -41,10 +41,45 @@ void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbn
    This function's job is to create thumbnail for designated file as fast as possible
    ----------------------------------------------------------------------------- */
 
+#if QLIMAGESET_USE_DEFAULT
+
 OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thumbnail, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options, CGSize maxSize)
 {
+    NSString * dir   = ((__bridge NSURL *)(url)).path;
+    NSString * file  = QLImagesetGetFileForPath(dir);
+    
+    CGImageSourceRef source = CGImageSourceCreateWithURL((__bridge CFURLRef)[NSURL fileURLWithPath:file], NULL);
+    CGImageRef image = CGImageSourceCreateImageAtIndex(source, 0, NULL);
+    CFRelease(source);
+    
+    QLThumbnailRequestSetImage(thumbnail, image, NULL);
+    CFRelease(image);
+    
     return noErr;
 }
+
+#else // #if QLIMAGESET_USE_DEFAULT
+
+OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thumbnail, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options, CGSize maxSize)
+{
+    NSSize thumbSize = NSMakeSize((maxSize.width * (600.0/800.0)), maxSize.height);
+    
+    NSString * dir   = ((__bridge NSURL *)(url)).path;
+    NSString * file  = QLImagesetGetFileForPath(dir);
+    
+    CGContextRef context =
+    QLThumbnailRequestCreateContext(thumbnail, thumbSize, false, NULL);
+    
+    if (context) {
+        QLImagesetDrawImageInContentWithURL(context, (__bridge CFURLRef)[NSURL fileURLWithPath:file], thumbSize);
+        QLThumbnailRequestFlushContext(thumbnail, context);
+        CFRelease(context);
+    }
+    
+    return noErr;
+}
+
+#endif // #if QLIMAGESET_USE_DEFAULT
 
 void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbnail)
 {
