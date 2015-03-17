@@ -35,9 +35,9 @@ Find and delete the following path:
 
 ## Want to help
   * [How to write a QuickLook plugin](https://github.com/qfish/QLImageset/wiki/How-to-write-a-Quicklook-plugin)
-  * [Star this repository](https://github.com/qfish/XAlign/)
-  * [Bugs Report & Advice](https://github.com/qfish/XAlign/issues)
-  * [Fork & Pull Request](https://github.com/qfish/XAlign/pulls)
+  * [Star this repository](https://github.com/qfish/QLImageset/)
+  * [Bugs Report & Advice](https://github.com/qfish/QLImageset/issues)
+  * [Fork & Pull Request](https://github.com/qfish/QLImageset/pulls)
 
 ## Contributor
 * [@qiaoxueshi](https://github.com/qiaoxueshi) Reviews the code.
